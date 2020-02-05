@@ -31,14 +31,28 @@ def find_greater_pair(src)
   # that are in the inner Arrays
   
   larger_nums = []
-  row_index  0
+  row_index = 0
   
   while row_index < src.count do 
     column_index = 0
-    
-    
-  
-  
+      while column_index < src[row_index].count do
+        if column_index == 0 
+          num1 = src[row_index][column_index]
+        else 
+          num2 = src[row_index][column_index]
+        end
+        column_index += 1
+      end 
+      
+      if num1 > num2 
+        larger_nums << num1 
+      else 
+        larger_nums << num2 
+      end
+      
+      row_index += 1 
+    end 
+    larger_nums
 end
 
 def total_even_pairs(src)

@@ -65,5 +65,25 @@ def total_even_pairs(src)
   # this!
   
   
+  row_index = 0
+  
+  while row_index < src.count do 
+    column_index = 0
+      while column_index < src[row_index].count do
+        if column_index == 0 
+          num1 = src[row_index][column_index]
+        else 
+          num2 = src[row_index][column_index]
+        end
+        column_index += 1
+      end 
+      
+      if (num1 % 2 == 0) && (num2 % 2 == 0) 
+        even_nums << num1 + num2
+      end
+      row_index += 1 
+    end 
+    
+    even_nums
   
 end

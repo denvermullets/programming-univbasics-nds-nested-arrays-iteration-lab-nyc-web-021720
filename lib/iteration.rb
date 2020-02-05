@@ -81,7 +81,7 @@ def total_even_pairs(src)
       
       if (num1 % 2 == 0) && (num2 % 2 == 0) 
         temp_sum = num1 + num2
-        even_nums += temp_sum
+        even_nums = temp_sum
       end
       row_index += 1 
     end 

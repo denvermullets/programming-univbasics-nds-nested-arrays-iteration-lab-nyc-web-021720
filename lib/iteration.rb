@@ -66,6 +66,7 @@ def total_even_pairs(src)
   
   
   row_index = 0
+  even_nums = 0
   
   while row_index < src.count do 
     column_index = 0
